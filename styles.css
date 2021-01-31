@@ -1,0 +1,38 @@
+body {
+  background-color: #000000;
+  font-family: monospace;
+  text-transform: lowercase;
+  font-size: 50px;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: darkgreen;
+}
+input:focus {
+  outline: none;
+}
+input {
+  border: none;
+  font-size: 50px;
+  background-color: #000000;
+  caret-color: #006400;
+  text-align: center;
+  text-transform: lowercase;
+  color: #006400;
+}
+label {
+  display: none;
+}
+.link-wrapper {
+  width: 50vw;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+img {
+  height: 10vh;
+}
