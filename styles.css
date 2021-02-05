@@ -36,3 +36,28 @@ label {
 img {
   height: 10vh;
 }
+
+input::placeholder {
+  color: 006400;
+  opacity: 1; /* Firefox */
+}
+
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: 006400;
+}
+input:-ms-input-placeholder {
+  /* IE 10+ */
+  color: 006400;
+}
+input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: 006400;
+}
+input:-moz-placeholder {
+  /* Firefox 18- */
+  color: 006400;
+}
+input::-webkit-input-placeholder {
+  color: 006400;
+}
