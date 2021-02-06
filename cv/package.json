@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Jongwoo Han <han980817@gmail.com>",
   "dependencies": {
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.1.5",
     "eslint-loader": "^3.0.4",
     "gatsby": "^2.20.24",
     "gatsby-image": "^2.2.39",
