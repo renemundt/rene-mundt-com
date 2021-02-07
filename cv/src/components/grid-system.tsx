@@ -2,10 +2,13 @@ import styled from "@emotion/styled"
 
 export const Grid = styled.div``
 
-export const Row = styled.div`
+interface RowProps {
+	css?: any
+}
+
+export const Row = styled.div<RowProps>`
 	display: flex;
 `
-
 interface ColProps {
 	size: number
 }

@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.1.5",
+    "@js-joda/core": "^3.2.0",
     "eslint-loader": "^3.0.4",
     "gatsby": "^2.20.24",
     "gatsby-image": "^2.2.39",
