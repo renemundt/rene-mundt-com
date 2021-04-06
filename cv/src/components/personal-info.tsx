@@ -1,17 +1,25 @@
 import * as React from "react"
 import { ChronoUnit, LocalDate } from "@js-joda/core"
-import { Row, Col } from "./grid-system"
 import { Heading3 } from "./shared"
+import styled from "@emotion/styled"
 
 const Age = () =>
 	LocalDate.of(1975, 10, 17).until(LocalDate.now(), ChronoUnit.YEARS)
 
+const Container = styled.div`
+	display: flex;
+	margin: 1rem;
+	justify-content: space-between;
+	@media (max-width: 600px) {
+		flex: 1;
+		flex-direction: column;
+	}
+`
+
 const PersonalInfo: React.FC = () => (
-	<Row>
-		<Col size={2}>
-			<Heading3>Personal information</Heading3>
-		</Col>
-		<Col size={1}>
+	<Container>
+		<Heading3>Personal information</Heading3>
+		<div>
 			<div>René Mundt</div>
 			<div>Sjællandsvej 3</div>
 			<div>4200 Slagelse</div>
@@ -20,8 +28,8 @@ const PersonalInfo: React.FC = () => (
 			<div>Married: Yes</div>
 			<div>Children: 2</div>
 			<div>Drivers license: Yes</div>
-		</Col>
-	</Row>
+		</div>
+	</Container>
 )
 
 export default PersonalInfo
