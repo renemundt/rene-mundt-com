@@ -1,6 +1,6 @@
 import styled from "@emotion/styled"
-// import * as React from "react"
 
 export const Heading3 = styled.h3`
+	margin: 0;
 	font-weight: bolder;
 `

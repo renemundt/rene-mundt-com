@@ -7,6 +7,7 @@ import Education from "../components/education"
 import JobExperience from "../components/job-experience"
 import Languages from "../components/languages"
 import Header from "../components/header"
+import Experience from "../components/experience"
 
 const IndexPage: React.FC = () => (
 	<Layout>
@@ -16,6 +17,7 @@ const IndexPage: React.FC = () => (
 			<PersonalInfo />
 			<Education />
 			<JobExperience />
+			<Experience />
 			<Languages />
 		</Grid>
 	</Layout>

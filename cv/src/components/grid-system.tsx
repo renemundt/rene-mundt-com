@@ -8,6 +8,8 @@ interface RowProps {
 
 export const Row = styled.div<RowProps>`
 	display: flex;
+	align-items: baseline;
+	margin: 1rem;
 `
 interface ColProps {
 	size: number
