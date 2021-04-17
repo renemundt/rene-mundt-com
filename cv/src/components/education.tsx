@@ -6,7 +6,7 @@ const Container = styled.div`
 	display: flex;
 	margin: 1rem;
 	justify-content: space-between;
-	@media (max-width: 600px) {
+	@media (max-width: 768px) {
 		flex: 1;
 		flex-direction: column;
 	}
@@ -16,8 +16,15 @@ const EducationInfo = styled.div`
 	display: flex;
 	justify-content: space-between;
 	min-width:500px;
-	@media (max-width: 600px) {
+	@media (max-width: 768px) {
 		min-width: unset;
+	}
+`
+
+const Period = styled.div`
+	min-width: 150px;
+	@media (max-width: 480px) {
+		min-width: 75px;
 	}
 `
 
@@ -28,23 +35,23 @@ const Education: React.FC = () => {
 			<div>
 				<EducationInfo>
 					<div>HTX</div>
-					<div>1992-1995</div>
+					<Period>1992-1995</Period>
 				</EducationInfo>
 				<EducationInfo>
 					<div>HH</div>
-					<div>1995-1996</div>
+					<Period>1995-1996</Period>
 				</EducationInfo>
 				<EducationInfo>
 					<div>Procurement education F.L.Smidth</div>
-					<div>1996-1998</div>
+					<Period>1996-1998</Period>
 				</EducationInfo>
 				<EducationInfo>
 					<div>Datamatiker</div>
-					<div>1998-2000</div>
+					<Period>1998-2000</Period>
 				</EducationInfo>
 				<EducationInfo>
 					<div>Bachelor Computer Science IHK</div>
-					<div>2007-2012</div>
+					<Period>2007-2012</Period>
 				</EducationInfo>
 			</div>
 		</Container>

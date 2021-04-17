@@ -10,16 +10,20 @@ const Container = styled.div`
 	display: flex;
 	margin: 1rem;
 	justify-content: space-between;
-	@media (max-width: 600px) {
+	@media (max-width: 768px) {
 		flex: 1;
 		flex-direction: column;
 	}
 `
 
+const Info = styled.div`
+	min-width: 150px;
+`
+
 const PersonalInfo: React.FC = () => (
 	<Container>
 		<Heading3>Personal information</Heading3>
-		<div>
+		<Info>
 			<div>René Mundt</div>
 			<div>Sjællandsvej 3</div>
 			<div>4200 Slagelse</div>
@@ -28,7 +32,7 @@ const PersonalInfo: React.FC = () => (
 			<div>Married: Yes</div>
 			<div>Children: 2</div>
 			<div>Drivers license: Yes</div>
-		</div>
+		</Info>
 	</Container>
 )
 
