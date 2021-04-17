@@ -16,6 +16,7 @@ const JobInfo = styled.div`
 	display: flex;
 	justify-content: space-between;
 	min-width: 500px;
+	align-items: flex-end;
 	@media (max-width: 768px) {
 		min-width: unset;
 	}
@@ -23,6 +24,7 @@ const JobInfo = styled.div`
 
 const Period = styled.div`
 	min-width: 150px;
+	margin-left: 20px;
 	@media (max-width: 480px) {
 		min-width: 75px;
 	}
