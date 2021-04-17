@@ -1,28 +1,53 @@
+import styled from "@emotion/styled"
 import * as React from "react"
-import { Col, Row } from "./grid-system"
 import { Heading3 } from "./shared"
+
+const Container = styled.div`
+	display: flex;
+	margin: 1rem;
+	justify-content: space-between;
+	@media (max-width: 600px) {
+		flex: 1;
+		flex-direction: column;
+	}
+`
+
+const EducationInfo = styled.div`
+	display: flex;
+	justify-content: space-between;
+	min-width:500px;
+	@media (max-width: 600px) {
+		min-width: unset;
+	}
+`
 
 const Education: React.FC = () => {
 	return (
-		<Row>
-			<Col size={1}>
-				<Heading3>Education</Heading3>
-			</Col>
-			<Col size={1}>
-				<div>HTX</div>
-				<div>HH</div>
-				<div>Procurement education F.L.Smidth</div>
-				<div>Datamatiker</div>
-				<div>Bachelor Computer Science IHK</div>
-			</Col>
-			<Col size={1}>
-				<div>1992-1995</div>
-				<div>1995-1996</div>
-				<div>1996-1998</div>
-				<div>1998-2000</div>
-				<div>2007-2012</div>
-			</Col>
-		</Row>
+		<Container>
+			<Heading3>Education</Heading3>
+			<div>
+				<EducationInfo>
+					<div>HTX</div>
+					<div>1992-1995</div>
+				</EducationInfo>
+				<EducationInfo>
+					<div>HH</div>
+					<div>1995-1996</div>
+				</EducationInfo>
+				<EducationInfo>
+					<div>Procurement education F.L.Smidth</div>
+					<div>1996-1998</div>
+				</EducationInfo>
+				<EducationInfo>
+					<div>Datamatiker</div>
+					<div>1998-2000</div>
+				</EducationInfo>
+				<EducationInfo>
+					<div>Bachelor Computer Science IHK</div>
+					<div>2007-2012</div>
+				</EducationInfo>
+			</div>
+		</Container>
 	)
 }
 
