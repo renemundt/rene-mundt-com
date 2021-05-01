@@ -1,5 +1,6 @@
 import styled from "@emotion/styled"
 import * as React from "react"
+import Period from "./common/period"
 import { Heading3 } from "./shared"
 
 const Container = styled.div`
@@ -19,14 +20,6 @@ const JobInfo = styled.div`
 	align-items: flex-end;
 	@media (max-width: 768px) {
 		min-width: unset;
-	}
-`
-
-const Period = styled.div`
-	min-width: 150px;
-	margin-left: 20px;
-	@media (max-width: 480px) {
-		min-width: 75px;
 	}
 `
 
