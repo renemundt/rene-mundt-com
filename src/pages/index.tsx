@@ -23,16 +23,19 @@ const inputWrapper = css`
 	input:focus {
 		outline: none;
 	}
+	input::placeholder {
+		color: darkgreen;
+	}
 `
 
 const inputBeautify = css`
 	border: none;
 	font-size: 50px;
 	background-color: #000000;
-	caret-color: #006400;
+	caret-color: darkgreen;
 	text-align: center;
 	text-transform: lowercase;
-	color: #006400;
+	color: darkgreen;
 `
 
 const IndexPage: React.FC = () => (
