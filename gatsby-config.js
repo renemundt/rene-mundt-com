@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
-		title: `René Mundt - CV`,
-		description: `Curriculum Vitae of René Mundt`,
+		title: `René Mundt`,
+		description: `Homepage of René Mundt`,
 		author: `René Mundt`,
 	},
 	plugins: [
