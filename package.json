@@ -12,6 +12,7 @@
     "gatsby": "3.4.0",
     "gatsby-image": "3.4.0",
     "gatsby-plugin-emotion": "^4.1.18",
+    "gatsby-plugin-force-trailing-slashes": "^1.0.5",
     "gatsby-plugin-manifest": "3.4.0",
     "gatsby-plugin-offline": "4.4.0",
     "gatsby-plugin-react-helmet": "4.4.0",

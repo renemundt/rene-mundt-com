@@ -1,5 +1,7 @@
 import { css } from "@emotion/core"
+import { navigate } from "gatsby-link"
 import * as React from "react"
+import { ChangeEvent } from "react"
 import SEO from "../components/seo"
 
 const container = css`
@@ -36,7 +38,12 @@ const inputBeautify = css`
 	text-align: center;
 	text-transform: lowercase;
 	color: darkgreen;
+	-webkit-text-security: disc;
 `
+
+const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
+	if (event.target.value.toLowerCase() === "renemundt") navigate("/cv/")
+}
 
 const IndexPage: React.FC = () => (
 	<div css={container}>
@@ -44,14 +51,13 @@ const IndexPage: React.FC = () => (
 		<div css={inputWrapper}>
 			<input
 				css={inputBeautify}
-				type="password"
 				name="name"
 				autoFocus
 				autoComplete="off"
 				spellCheck="false"
 				maxLength={9}
-				// onKeyUp={ () => console.log('fuck') }
 				placeholder="enter access code"
+				onChange={handleOnChange}
 			/>
 		</div>
 	</div>
