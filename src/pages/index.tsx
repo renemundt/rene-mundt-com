@@ -39,6 +39,7 @@ const inputBeautify = css`
 	text-transform: lowercase;
 	color: darkgreen;
 	-webkit-text-security: disc;
+	caret-color: transparent;
 `
 
 const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
