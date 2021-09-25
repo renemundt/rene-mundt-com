@@ -12,7 +12,6 @@ const Container = css`
 const Wrapper = css`
 	background-color: #ffffff;
 	min-height: 100% !important;
-	height: 100%;
 `
 
 const Layout: React.FC = ({ children }) => {
