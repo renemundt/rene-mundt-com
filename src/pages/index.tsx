@@ -1,7 +1,7 @@
 import { css } from "@emotion/core"
 import { navigate } from "gatsby-link"
 import * as React from "react"
-import { ChangeEvent } from "react"
+import { ChangeEvent, useState } from "react"
 import SEO from "../components/seo"
 
 const container = css`
@@ -20,48 +20,73 @@ const inputWrapper = css`
 		top: 50%;
 		-webkit-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
-		color: darkgreen;
 	}
 	input:focus {
 		outline: none;
 	}
 	input::placeholder {
-		color: darkgreen;
+		color: darkgoldenrod;
 	}
 `
 
-const inputBeautify = css`
-	border: none;
-	font-size: 50px;
-	background-color: #000000;
-	caret-color: darkgreen;
-	text-align: center;
-	text-transform: lowercase;
-	color: darkgreen;
-	-webkit-text-security: disc;
-	caret-color: transparent;
-`
-
-const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
-	if (event.target.value.toLowerCase() === "renemundt") navigate("/cv/")
+const inputBeautify = (state: passwordState) => {
+	let color = "darkgoldenrod"
+	if (state === "valid") color = "darkgreen"
+	if (state === "invalid") color = "darkred"
+	return css`
+		border: none;
+		font-size: 50px;
+		background-color: #000000;
+		text-align: center;
+		text-transform: lowercase;
+		color: ${color};
+		-webkit-text-security: disc;
+		caret-color: transparent;
+	`
 }
 
-const IndexPage: React.FC = () => (
-	<div css={container}>
-		<SEO title="Home" />
-		<div css={inputWrapper}>
-			<input
-				css={inputBeautify}
-				name="name"
-				autoFocus
-				autoComplete="off"
-				spellCheck="false"
-				maxLength={9}
-				placeholder="enter access code"
-				onChange={handleOnChange}
-			/>
+const handleOnChange = (
+	event: ChangeEvent<HTMLInputElement>
+): passwordState => {
+	if (event.target.value.toLowerCase() === "renemundt") {
+		setTimeout(() => {
+			navigate("/cv/")
+		}, 2000)
+		return "valid"
+	}
+	if (
+		event.target.value.length === 9 &&
+		event.target.value.toLowerCase() !== "renemundt"
+	)
+		return "invalid"
+	return "notLongEnough"
+}
+
+type passwordState = "valid" | "invalid" | "notLongEnough"
+
+const IndexPage: React.FC = () => {
+	const [invalidPassword, setInvalidPassword] = useState<passwordState>(
+		"notLongEnough"
+	)
+	return (
+		<div css={container}>
+			<SEO title="Home" />
+			<div css={inputWrapper}>
+				<input
+					css={() => inputBeautify(invalidPassword)}
+					name="name"
+					autoFocus
+					autoComplete="off"
+					spellCheck="false"
+					maxLength={9}
+					placeholder="enter access code"
+					onChange={(e) => {
+						setInvalidPassword(handleOnChange(e))
+					}}
+				/>
+			</div>
 		</div>
-	</div>
-)
+	)
+}
 
 export default IndexPage
