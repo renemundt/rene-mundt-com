@@ -1,22 +1,17 @@
-import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 import * as React from "react"
-import { Col, Row } from "./grid-system"
 
-const Heading1 = styled.header`
+const heading1 = css`
 	text-align: right;
 	border-bottom: 2px solid;
+	margin: 0 1rem 0 0;
+	height: 60px;
 `
 
-const Header: React.FC = () => {
-	return (
-		<Row>
-			<Col size={1}>
-				<Heading1>
-					<h1>Curriculum Vitae</h1>
-				</Heading1>
-			</Col>
-		</Row>
-	)
-}
+const Header: React.FC = () => (
+	<header>
+		<h1 css={heading1}>Curriculum Vitae</h1>
+	</header>
+)
 
 export default Header

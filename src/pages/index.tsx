@@ -5,7 +5,7 @@ import { ChangeEvent, useState } from "react"
 import SEO from "../components/seo"
 
 const container = css`
-	background-color: #000000;
+	/* background-color: #000000; */
 	font-family: monospace;
 	text-transform: lowercase;
 	font-size: 50px;

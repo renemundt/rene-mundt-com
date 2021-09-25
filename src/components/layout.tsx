@@ -1,13 +1,26 @@
-import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 import * as React from "react"
 
-const Container = styled.div`
+const Container = css`
 	max-width: 1280px;
-	margin: auto;
+	min-height: 100% !important;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+`
+
+const Wrapper = css`
+	background-color: #ffffff;
+	min-height: 100% !important;
+	height: 100%;
 `
 
 const Layout: React.FC = ({ children }) => {
-	return <Container>{children}</Container>
+	return (
+		<div css={Container}>
+			<div css={Wrapper}>{children}</div>
+		</div>
+	)
 }
 
 export default Layout
