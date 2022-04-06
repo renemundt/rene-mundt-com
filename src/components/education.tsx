@@ -26,7 +26,7 @@ const EducationInfo = styled.div`
 const Education: React.FC = () => {
 	return (
 		<Container>
-			<Heading3>Education</Heading3>
+			<Heading3>Educations</Heading3>
 			<div>
 				<EducationInfo>
 					<div>HTX</div>
