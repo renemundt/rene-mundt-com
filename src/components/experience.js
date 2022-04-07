@@ -47,7 +47,7 @@ const Experience = () => {
               <TableData text={'Backend'} />
               <TableData
                 text={
-                  'Nuget, WebApi, Console applications, WPF, Microsoft Forms, Unit test, SQL, SQL Server Management Studio, Nodejs, IoC, AWS DynamoDB, CosmosDb, Elastic Search (ELK), NHibernate, Design patterns'
+                  'Nuget, WebApi, Console applications, WPF, Microsoft Forms, Unit testing, SQL, SQL Server Management Studio, Nodejs, IoC, AWS DynamoDB, CosmosDb, Elastic Search (ELK), NHibernate, Design patterns'
                 }
               />
             </tr>
@@ -62,19 +62,17 @@ const Experience = () => {
             <tr>
               <TableData text={'Infrastructure'} />
               <TableData
-                text={'Windows Server, IIS, AWS S3 Buckets, AWS Cloudfront, AWS lambda functions, IaC (Terraform, AWS CLI), AzureDevOps'}
+                text={'Windows Server, IIS, AWS S3, AWS Cloudfront, AWS lambda functions, IaC (Terraform, AWS CLI), AzureDevOps'}
               />
             </tr>
             <tr>
               <TableData text={'CI/CD'} />
-              <TableData text={'AzureDevops, Octopus, Jenkins, Powershell'} />
+              <TableData text={'Azure DevOps, Octopus, Jenkins, Powershell'} />
             </tr>
             <tr>
               <TableData text={'Other'} />
               <TableData
-                text={
-                  'Windows Server, IIS, AWS S3 Buckets, AWS Cloudfront, AWS lambda Technical project management, Business and Architecture understanding, Scrum, Coordination, Team management'
-                }
+                text={'Technical project management, Business and Architecture understanding, Scrum, Coordination, Team management'}
               />
             </tr>
           </tbody>

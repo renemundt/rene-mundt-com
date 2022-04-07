@@ -49,7 +49,7 @@ const JobExperience = () => {
           <Period>2002-2004</Period>
         </JobInfo>
         <JobInfo>
-          <div>System developer - Region Sjælland</div>
+          <div>System Developer - Region Sjælland</div>
           <Period>2004-2010</Period>
         </JobInfo>
         <JobInfo>
