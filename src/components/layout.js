@@ -1,7 +1,7 @@
-import * as React from 'react'
+import React from 'react'
 import { css } from '@emotion/react'
 
-const Container = css`
+const container = css`
   max-width: 1280px;
   min-height: 100% !important;
   height: 100%;
@@ -9,15 +9,15 @@ const Container = css`
   margin-right: auto;
 `
 
-const Wrapper = css`
+const wrapper = css`
   background-color: #ffffff;
   min-height: 100% !important;
 `
 
 const Layout = ({ children }) => {
   return (
-    <div css={Container}>
-      <div css={Wrapper}>{children}</div>
+    <div css={container}>
+      <div css={wrapper}>{children}</div>
     </div>
   )
 }

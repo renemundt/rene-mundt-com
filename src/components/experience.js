@@ -1,8 +1,7 @@
-import * as React from 'react'
+import React from 'react'
 import { css } from '@emotion/react'
 
-import { Col, Row } from './grid-system'
-import { Heading3 } from './shared'
+import { Heading3 } from './common/headings'
 
 const thTdStyles = css`
   text-align: left;
@@ -16,12 +15,28 @@ const TableData = ({ text }) => <td css={thTdStyles}>{text}</td>
 const Experience = () => {
   return (
     <>
-      <Row>
-        <Col size={1}>
+      <div
+        css={css`
+          display: flex;
+          align-items: baseline;
+          margin: 1rem;
+        `}
+      >
+        <div
+          css={css`
+            flex: 1;
+          `}
+        >
           <Heading3>Experience</Heading3>
-        </Col>
-      </Row>
-      <Row>
+        </div>
+      </div>
+      <div
+        css={css`
+          display: flex;
+          align-items: baseline;
+          margin: 1rem;
+        `}
+      >
         <table
           css={css`
             width: 100%;
@@ -77,7 +92,7 @@ const Experience = () => {
             </tr>
           </tbody>
         </table>
-      </Row>
+      </div>
     </>
   )
 }

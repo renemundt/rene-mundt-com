@@ -1,71 +1,30 @@
-import * as React from 'react'
-import { css } from '@emotion/react'
+import React from 'react'
 import Period from './common/period'
-import { Heading3 } from './shared'
+import { Heading3 } from './common/headings'
+import { Row, Col } from './common/grid'
 
-const Container = ({ children }) => (
-  <div
-    css={css`
-      display: flex;
-      margin: 1rem;
-      justify-content: space-between;
-      @media (max-width: 768px) {
-        flex: 1;
-        flex-direction: column;
-      }
-    `}
-  >
-    {children}
-  </div>
-)
-
-const JobInfo = ({ children }) => (
-  <div
-    css={css`
-      display: flex;
-      justify-content: space-between;
-      min-width: 500px;
-      align-items: flex-end;
-      @media (max-width: 768px) {
-        min-width: unset;
-      }
-    `}
-  >
-    {children}
-  </div>
-)
+const Info = ({ title, period }) => {
+  return (
+    <Col>
+      <div> {title}</div>
+      <Period>{period}</Period>
+    </Col>
+  )
+}
 
 const JobExperience = () => {
   return (
-    <Container>
+    <Row>
       <Heading3>Job experience</Heading3>
       <div>
-        <JobInfo>
-          <div>System Developer / Consultant - Ementor</div>
-          <Period>2000-2002</Period>
-        </JobInfo>
-        <JobInfo>
-          <div>System Developer Novo Nordisk</div>
-          <Period>2002-2004</Period>
-        </JobInfo>
-        <JobInfo>
-          <div>System Developer - Region Sjælland</div>
-          <Period>2004-2010</Period>
-        </JobInfo>
-        <JobInfo>
-          <div>Full Stack Developer - Coop Danmark</div>
-          <Period>2010-2012</Period>
-        </JobInfo>
-        <JobInfo>
-          <div>Full Stack Developer - Thomas Cook Airlines</div>
-          <Period>2012-2016</Period>
-        </JobInfo>
-        <JobInfo>
-          <div>Full Stack / Frontend developer - DFDS</div>
-          <Period>2016-....</Period>
-        </JobInfo>
+        <Info title={'System Developer / Consultant - Ementor'} period={'2000-2002'}></Info>
+        <Info title={'System Developer Novo Nordisk'} period={'2002-2004'}></Info>
+        <Info title={'System Developer - Region Sjælland'} period={'2004-20010'}></Info>
+        <Info title={'Full Stack Developer - Coop Danmark'} period={'2010-2012'}></Info>
+        <Info title={'Full Stack Developer - Thomas Cook Airlines'} period={'2012-2016'}></Info>
+        <Info title={'Full Stack / Frontend developer - DFDS'} period={'2016....'}></Info>
       </div>
-    </Container>
+    </Row>
   )
 }
 

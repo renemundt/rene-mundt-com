@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { css } from '@emotion/react'
 import { ChronoUnit, LocalDate } from '@js-joda/core'
-import { Heading3 } from './shared'
+import { Heading3 } from './common/headings'
 
 const Age = () => LocalDate.of(1975, 10, 17).until(LocalDate.now(), ChronoUnit.YEARS)
 

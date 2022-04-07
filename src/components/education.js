@@ -1,40 +1,20 @@
-import * as React from 'react'
-import { css } from '@emotion/react'
+import React from 'react'
 import Period from './common/period'
-import { Heading3 } from './shared'
-
-const container = css`
-  display: flex;
-  margin: 1rem;
-  justify-content: space-between;
-  @media (max-width: 768px) {
-    flex: 1;
-    flex-direction: column;
-  }
-`
-
-const infoStyles = css`
-  display: flex;
-  justify-content: space-between;
-  min-width: 500px;
-  align-items: flex-end;
-  @media (max-width: 768px) {
-    min-width: unset;
-  }
-`
+import { Heading3 } from './common/headings'
+import { Row, Col } from './common/grid'
 
 const EducationInfo = ({ education, period }) => {
   return (
-    <div css={infoStyles}>
+    <Col>
       <div>{education}</div>
       <Period>{period}</Period>
-    </div>
+    </Col>
   )
 }
 
 const Education = () => {
   return (
-    <div css={container}>
+    <Row>
       <Heading3>Education</Heading3>
       <div>
         <EducationInfo education={'HTX'} period={'1992-1995'} />
@@ -43,7 +23,7 @@ const Education = () => {
         <EducationInfo education={'Datamatiker'} period={'1998-2000'} />
         <EducationInfo education={'Bachelor Computer Science IHK'} period={'2007-2012'} />
       </div>
-    </div>
+    </Row>
   )
 }
 

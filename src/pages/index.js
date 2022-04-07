@@ -1,6 +1,6 @@
-import * as React from "react"
-import { Link} from "gatsby"
-import { Global, css } from "@emotion/react"
+import React from 'react'
+import { Link } from 'gatsby'
+import { Global, css } from '@emotion/react'
 
 const pageStyles = css`
   display: flex;
@@ -19,18 +19,21 @@ const pageStyles = css`
 
 const IndexPage = () => {
   return (
-    <><Global 
-      styles={css`
-        body { 
-          background-color:slategray;
-        }`
-      }
-    />
-    <main css={pageStyles}>
-      <title>René Mundt</title>
-      <Link to="/cv">CV</Link>
-      <a href="https://renemundt.blogspot.com/" target="_blank">Blog</a>
-    </main>
+    <>
+      <Global
+        styles={css`
+          body {
+            background-color: slategray;
+          }
+        `}
+      />
+      <main css={pageStyles}>
+        <title>René Mundt</title>
+        <Link to="/cv">CV</Link>
+        <a href="https://renemundt.blogspot.com/" target="_blank">
+          Blog
+        </a>
+      </main>
     </>
   )
 }
