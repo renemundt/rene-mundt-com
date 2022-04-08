@@ -8,7 +8,7 @@ const pageStyles = css`
   align-items: center;
   height: 100vh;
   a {
-    font-size: 100px;
+    font-size: 6vh;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
