@@ -77,7 +77,7 @@ const Experience = () => {
             <tr>
               <TableData text={'Infrastructure'} />
               <TableData
-                text={'Windows Server, IIS, AWS S3, AWS Cloudfront, AWS lambda functions, IaC (Terraform, AWS CLI), AzureDevOps'}
+                text={'Windows Server, IIS, AWS S3, AWS Cloudfront, AWS lambda functions, IaC (Terraform, AWS CLI), Azure DevOps'}
               />
             </tr>
             <tr>
