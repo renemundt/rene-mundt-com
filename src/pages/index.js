@@ -30,7 +30,7 @@ const IndexPage = () => {
       <main css={pageStyles}>
         <title>René Mundt</title>
         <Link to="/cv">CV</Link>
-        <a href="https://renemundt.blogspot.com/" target="_blank">
+        <a href="https://renemundt.blogspot.com/" target="_blank" rel="noreferrer">
           Blog
         </a>
       </main>
