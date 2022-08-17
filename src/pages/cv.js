@@ -6,7 +6,7 @@ import Education from '../components/education'
 import JobExperience from '../components/job-experience'
 import Experience from '../components/experience'
 import Languages from '../components/languages'
-import { SEO } from '../components/seo'
+import { Seo } from '../components/seo'
 
 const heading1 = css`
   text-align: right;
@@ -34,4 +34,4 @@ const cv = () => {
 
 export default cv
 
-export const Head = () => <SEO title="René Mundt CV" description="Cirriculum of René Mundt" />
+export const Head = () => <Seo title="René Mundt CV" description="Cirriculum of René Mundt" />
