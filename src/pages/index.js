@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Global, css } from '@emotion/react'
+import { SEO } from '../components/seo'
 
 const pageStyles = css`
   display: flex;
@@ -39,3 +40,5 @@ const IndexPage = () => {
 }
 
 export default IndexPage
+
+export const Head = () => <SEO />

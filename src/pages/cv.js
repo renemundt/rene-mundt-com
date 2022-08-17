@@ -32,3 +32,5 @@ const cv = () => {
 }
 
 export default cv
+
+export const Head = () => <SEO title="René Mundt CV" description="Cirriculum of René Mundt" />

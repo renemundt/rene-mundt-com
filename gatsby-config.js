@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `renemundt-website`,
-    siteUrl: `https://www.renemund.coms`
+    title: 'René Mundt',
+    description: 'Website of René Mundt',
+    siteUrl: 'https://www.renemundt.com',
   },
-  plugins: ["gatsby-plugin-emotion"]
-};
+  plugins: ['gatsby-plugin-emotion'],
+}
