@@ -37,6 +37,6 @@ export default cv
 export const Head = () => (
   <Seo
     title="René Mundt - CV, Experienced developer, Frontend, Backend"
-    description="Cirriculum of René Mundt - Experience developer, Frontend, Backend, React, Angular, Vanilla Javascript, .NET, Tech Lead"
+    description="Cirriculum of René Mundt - Experienced developer, Frontend, Backend, React, Angular, Vanilla Javascript, .NET, Tech Lead"
   />
 )
