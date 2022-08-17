@@ -20,7 +20,7 @@ const cv = () => {
     <Layout>
       <div>
         <header>
-          <h1 css={heading1}>Curriculum Vitae</h1>
+          <h1 css={heading1}>René Mundt - Curriculum Vitae</h1>
         </header>
         <PersonalInfo />
         <Education />
