@@ -6,6 +6,7 @@ import Education from '../components/education'
 import JobExperience from '../components/job-experience'
 import Experience from '../components/experience'
 import Languages from '../components/languages'
+import { SEO } from '../components/seo'
 
 const heading1 = css`
   text-align: right;
